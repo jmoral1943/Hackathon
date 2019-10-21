@@ -1,0 +1,39 @@
+.c-home {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+}
+
+.c-home__logo {
+  font-weight: 200;
+  span {
+    font-weight: 800;
+  }
+  text-align: center;
+  font-size: 1.7em;
+  color: white;
+  letter-spacing: 3px;
+  margin: 0;
+}
+.c-home__round {
+  width: 249px;
+  height: 75px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.62);
+  border-radius: 63px;
+  margin: auto auto 1em auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.c-sportbutton__button {
+  text-decoration: none;
+  color: white;
+  width: 70vw;
+  margin: .8em auto;
+  padding: 1.5em 1em;
+  font-size: 1.5em;
+  text-align: center;
+}

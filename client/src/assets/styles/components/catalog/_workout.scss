@@ -1,0 +1,53 @@
+.c-workout {
+  display: flex;
+  align-items: flex-start;
+  margin-top: .5em;
+}
+
+.c-workout__icon {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 50%;
+  margin-right: 1em;
+}
+
+.c-workout-name {
+  margin-top: 0.1em;
+  font-weight: 800;
+  margin-bottom: .1em;
+}
+
+.c-workout__sets-reps {
+  display: flex;
+}
+.c-workout__reps {
+  margin-right: 1em;
+  margin-top: 0;
+  &::after {
+    content: " reps";
+  }
+}
+
+.c-workout__duration {
+  margin-right: 1em;
+  margin-top: 0;
+
+  &::after {
+    content: " duration";
+  }
+}
+
+.c-workout__sets {
+  margin-top: 0;
+  &::after {
+    content: " sets";
+  }
+}
+
+.c-workout__sets,
+.c-workout__duration,
+.c-workout__reps {
+  color: #999ba3;
+}

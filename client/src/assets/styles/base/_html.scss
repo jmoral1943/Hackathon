@@ -1,0 +1,15 @@
+html {
+  font-family: 'Lato', sans-serif;
+}
+
+.c-back__button {
+  position: absolute;
+  color: white;
+  z-index: 1000;
+  transform: rotate(180deg);
+  top: 20px;
+  left: 10px;
+  img {
+    width: 35px;
+  }
+}
