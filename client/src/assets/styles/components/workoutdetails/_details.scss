@@ -1,0 +1,47 @@
+// .c-workout__details {
+    // background-color: pink;
+// }
+
+.c-workout-details__content {
+    margin-top: 63px;
+}
+
+.c-worjout-details__titles{
+    margin-left: 1em;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.c-workout-details__title {
+    color: #ffa600;
+  font-size: 30px;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0;
+}
+
+.c-workout-details__subtitle {
+    color: rgba(255, 166, 0, 0.67);
+    font-weight: 400;
+}
+
+.c-workout-details__video {
+    display: flex;
+    justify-content: center;
+}
+
+.c-workout-details__description {
+    width: 75%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.c-workout-details__time {
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+
+}
