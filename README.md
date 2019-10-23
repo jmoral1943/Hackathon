@@ -7,3 +7,4 @@ Jonathan Morales, and
 Le'John McNeeley
 
 # Liscense
+This project is licensed under the MIT License - see the LICENSE.md file for details
