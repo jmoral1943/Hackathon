@@ -1,7 +1,7 @@
 # Hackathon
 Hackathon project, designed  for lifeSports, a Charlotte based nonprofit that combines sports, mentorship, and academics to empower young men as leaders in their communities.
 
-#Heroku App Link 
+# Heroku App Link 
 https://lifesports-hackathon.herokuapp.com/catalog
 
 # Authors
