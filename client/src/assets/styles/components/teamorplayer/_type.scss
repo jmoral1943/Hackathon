@@ -26,3 +26,23 @@
   color: white;
   font-size: 4em;
 }
+
+@media screen and (min-width: 300px) {
+  .c-team-player {
+    // background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // align-content: center;
+    flex-direction: column;
+  }
+
+  .c-team__image {
+    width: 500px;
+    height: 700px;
+    margin: 0px;
+  }
+  .c-player__image {
+    width: 500px;
+  }
+}

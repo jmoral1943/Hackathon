@@ -9,6 +9,7 @@ const TeamOrPlayer = () => {
   return (
     <main>
      <BackButton />
+     <div className="c-team-player">
       <div className="c-team">
         <Link to="/catalog">
           <h2 className="c-team__heading">Team</h2>
@@ -25,6 +26,7 @@ const TeamOrPlayer = () => {
           />
         </Link>
       </div>
+     </div>
     </main>
   );
 };
