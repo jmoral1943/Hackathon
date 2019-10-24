@@ -6,6 +6,7 @@ import { Provider } from "react-redux";
 
 import "./assets/styles/styles.scss";
 import Home from "./components/Home";
+import WorkoutDetails from "./components/WorkoutDetails";
 import TeamOrPlayer from "./components/TeamOrPlayer";
 import Catalog from "./components/Catalog";
 import Workout from "./components/Catalog/Workout";

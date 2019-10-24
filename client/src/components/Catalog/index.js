@@ -6,6 +6,8 @@ import Backbutton from "../Layout/Backbutton";
 import * as actionTypes from "../../store/actions";
 import lifeHoopsLogo from "../../assets/images/lifehoops.png";
 import Workout from "./Workout";
+import Filter from "./Filter";
+
 
 const Catalog = props => {
   useEffect(() => {
@@ -25,6 +27,12 @@ const Catalog = props => {
         alt="Life hoops logo"
         className="c-catalog__logo"
       />
+      <div className="c-filter">
+        <Filter />
+        <Filter />
+        <Filter />
+      </div>
+
       <main className="c-catalog__workouts">
         {props.workouts.map(workout => (
           <Workout
