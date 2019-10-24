@@ -9,7 +9,8 @@ import Workout from "./Workout";
 
 const Catalog = props => {
   useEffect(() => {
-    axios.get("/workout/basketball/catalog").then(({ data }) => {
+    let url =`/workout/${props.sport}/${props.type}`
+    axios.get(url).then(({ data }) => {
       console.log(data);
       props.loadWorkouts(data);
     });
@@ -25,25 +26,26 @@ const Catalog = props => {
         className="c-catalog__logo"
       />
       <main className="c-catalog__workouts">
-      {props.workouts.map(workout => (
-        <Workout
-          name={workout.name}
-          icon_url={workout.icon_url}
-          reps={workout.reps}
-          duration={workout.duration}
-          sets={workout.sets}
-          key={workout._id}
-        />
-      ))}
+        {props.workouts.map(workout => (
+          <Workout
+            name={workout.name}
+            icon_url={workout.icon_url}
+            reps={workout.reps}
+            duration={workout.duration}
+            sets={workout.sets}
+            key={workout._id}
+          />
+        ))}
       </main>
-      
     </div>
   );
 };
 
 const mapStateToProps = state => {
   return {
-    workouts: state.workouts
+    workouts: state.workouts,
+    sport: state.sport,
+    type: state.type
   };
 };
 
