@@ -16,6 +16,14 @@ router.post("/categories/add", (req, res) => {
     .catch(err => res.status(404).json(err));
 });
 
+router.get("/drill/:id", (req, res) => {
+  Category.findById(ObjectId(req.params.id), (err, data) => {
+
+    console.log(req.params.id);
+    return res.json(data);
+  });
+});
+
 // Returns all the workouts for a given sport
 router.get("/:sport", (req, res) => {
   Workout.find({ sport: req.params.sport })
@@ -35,11 +43,14 @@ router.get("/:sport/categories", (req, res) => {
     .catch(err => res.status(500).json(err));
 });
 
-router.get("/:sport/catalog", (req, res) => {
-  Workout.find({ sport: req.params.sport })
-    .select({"name": 1, "icon_url": 1, "sets": 1, "reps": 1, "duration": 1})
+// get all the workouts for a sport either a team or single player drill
+router.get("/:sport/:type", (req, res) => {
+  Workout.find({ sport: req.params.sport, type: req.params.type })
+    .select({ name: 1, icon_url: 1, sets: 1, reps: 1, duration: 1 })
     .then(data => {
       return res.json(data);
-    });
+    })
+    .catch(err => res.status(500).json(err));
 });
+
 module.exports = router;

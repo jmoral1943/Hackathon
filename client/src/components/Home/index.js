@@ -21,6 +21,7 @@ const Home = () => {
           organization={sport.organization}
           color={sport.color}
           name={sport.name}
+          sport={sport.name}
           key={sport.organization}
         />
       ))}

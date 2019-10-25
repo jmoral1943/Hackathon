@@ -1,1 +1,4 @@
-export const LOADWORKOUTS = 'LOADWORKOUTS';
+export const LOADWORKOUTS = "LOADWORKOUTS";
+export const LOADSPORT = "LOADSPORT";
+export const LOADTYPE = "LOADTYPE";
+export const LOADCATEGORY = "LOADCATEGORY";

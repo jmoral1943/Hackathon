@@ -24,6 +24,7 @@ const Routing = (
       <Route path="/teamorplayer" component={TeamOrPlayer} />
       <Route path="/catalog" component={Catalog} />
       <Route path="/workout" component={Workout} />
+      <Route path="/workoutdetails" component={WorkoutDetails}/>
     </Switch>
   </Router>
 );

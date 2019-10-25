@@ -1,7 +1,7 @@
 import React from "react";
 import BackButton from "../Layout/Backbutton"
 
-const WorkoutDetails = () => {
+const WorkoutDetails = (props) => {
   return (
     <main className="c-workout__details">
       <BackButton />

@@ -46,6 +46,7 @@
   margin-top: 0.1em;
   font-weight: 800;
   margin-bottom: .1em;
+  color: black;
 }
 
 .c-workout__sets-reps {
@@ -79,4 +80,10 @@
 .c-workout__duration,
 .c-workout__reps {
   color: #999ba3;
+  text-decoration: none;
+}
+
+.c-workout__link {
+  display: flex;
+  text-decoration: none;
 }
