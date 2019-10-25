@@ -12,7 +12,6 @@ import Catalog from "./components/Catalog";
 import Workout from "./components/Catalog/Workout";
 
 import reducer from './store/reducer'
-import OneWorkout from "./components/Catalog/OneWorkout";
 export const store = createStore(
   reducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
@@ -25,7 +24,7 @@ const Routing = (
       <Route path="/teamorplayer" component={TeamOrPlayer} />
       <Route path="/catalog" component={Catalog} />
       <Route path="/workout" component={Workout} />
-      <Route path="/singleworkout" component={OneWorkout}/>
+      <Route path="/workoutdetails" component={WorkoutDetails}/>
     </Switch>
   </Router>
 );

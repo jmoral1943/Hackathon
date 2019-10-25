@@ -17,7 +17,11 @@ router.post("/categories/add", (req, res) => {
 });
 
 router.get("/drill/:id", (req, res) => {
-  Category.findById(req.params.id, (err, data) => res.json(data))
+  Category.findById(ObjectId(req.params.id), (err, data) => {
+
+    console.log(req.params.id);
+    return res.json(data);
+  });
 });
 
 // Returns all the workouts for a given sport
@@ -45,7 +49,8 @@ router.get("/:sport/:type", (req, res) => {
     .select({ name: 1, icon_url: 1, sets: 1, reps: 1, duration: 1 })
     .then(data => {
       return res.json(data);
-    });
+    })
+    .catch(err => res.status(500).json(err));
 });
 
 module.exports = router;
