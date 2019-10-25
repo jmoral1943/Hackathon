@@ -10,6 +10,7 @@ import * as actionTypes from "../../store/actions";
 const TeamOrPlayer = (props) => {
   return (
     <main>
+
       <BackButton />
       <div className="c-team">
         <Link to="/catalog" onClick={() => props.loadType("team")}>
@@ -27,6 +28,7 @@ const TeamOrPlayer = (props) => {
           />
         </Link>
       </div>
+     </div>
     </main>
   );
 };
